@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.758a5b39.chunk.js",
-    "main.js.map": "/static/js/main.758a5b39.chunk.js.map",
+    "main.js": "/static/js/main.f708a43b.chunk.js",
+    "main.js.map": "/static/js/main.f708a43b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0733fe2d.js",
     "runtime-main.js.map": "/static/js/runtime-main.0733fe2d.js.map",
-    "static/js/2.596a8fb1.chunk.js": "/static/js/2.596a8fb1.chunk.js",
-    "static/js/2.596a8fb1.chunk.js.map": "/static/js/2.596a8fb1.chunk.js.map",
+    "static/js/2.99dc15ea.chunk.js": "/static/js/2.99dc15ea.chunk.js",
+    "static/js/2.99dc15ea.chunk.js.map": "/static/js/2.99dc15ea.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.596a8fb1.chunk.js.LICENSE.txt": "/static/js/2.596a8fb1.chunk.js.LICENSE.txt",
+    "static/js/2.99dc15ea.chunk.js.LICENSE.txt": "/static/js/2.99dc15ea.chunk.js.LICENSE.txt",
     "static/media/Me_in_a_car.ad0b0566.jpg": "/static/media/Me_in_a_car.ad0b0566.jpg",
     "static/media/Playing_guitar.5c4d41ce.jpg": "/static/media/Playing_guitar.5c4d41ce.jpg",
+    "static/media/brews.9d1c62aa.jpg": "/static/media/brews.9d1c62aa.jpg",
     "static/media/minturnMile.3cdb2c47.JPG": "/static/media/minturnMile.3cdb2c47.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.0733fe2d.js",
-    "static/js/2.596a8fb1.chunk.js",
-    "static/js/main.758a5b39.chunk.js"
+    "static/js/2.99dc15ea.chunk.js",
+    "static/js/main.f708a43b.chunk.js"
   ]
 }

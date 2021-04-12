@@ -5,8 +5,8 @@ body, html {
     margin-right: 0%;
 }
 
-.me {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("12dec8938220093eb7f1fdb8a9ce40b8-the-rocky-mountains.jpg");
+.bannerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("rocky-mountains.jpg");
 
     /* Set a specific height */
     height: 50%;
@@ -18,7 +18,7 @@ body, html {
     position: relative;
 }
 
-.me-text {
+.textInHeader {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -128,4 +128,9 @@ body, html {
 
 .footerRefs {
     display: inline;
+}
+
+.projects {
+    padding-top: 30px;
+    padding-left: 15px;
 }
