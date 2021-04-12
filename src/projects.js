@@ -9,7 +9,20 @@ class Projects extends React.Component {
 
     render() {
 
-        return ("Projects are the future");
+        return (
+            <div>
+                <h1>Projects</h1>
+
+                <h3>ConRadar</h3>
+                <h5>Spring 2021</h5>
+                <hr />
+                <h3>Pika Monitoring</h3>
+                <h5>Fall 2020</h5>
+                <hr />
+                <h3>Tax Assistance Program</h3>
+                <h5>Spring 2018</h5>
+            </div>
+        );
     }
 }
 

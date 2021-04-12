@@ -33,7 +33,6 @@ body, html {
     padding: 0;
     background-color: rgb(100, 100, 100);
     overflow: hidden;
-
     width: 100%;
 }
 
@@ -75,11 +74,13 @@ body, html {
 .employment {
     padding-right: 30px;
     padding-top: 15px;
+    padding-left: 15px;
 }
 
 .hobbies {
     padding-right: 75px;
     padding-left: 15px;
+    padding-top: 15px;
     text-align: justify;
 }
 
@@ -101,4 +102,30 @@ body, html {
     width: 25%;
     padding-right: 15px;
     text-align: justify;
+}
+
+.brewsPic {
+    float: right;
+    display: inline;
+    width: 30%;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.bulletItem {
+    text-decoration: underline;
+}
+
+.academics {
+    padding-left: 15px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.footerRefs {
+    display: inline;
 }

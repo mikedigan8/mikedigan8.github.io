@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import meInCar from './Me_in_a_car.jpg';
+import data from '../src/data.json';
 
 class Home extends React.Component {
     constructor(props) {
@@ -25,17 +26,17 @@ class Home extends React.Component {
             of 2020 and will finish my CS degree in May of 2021.
 
             <hr></hr>
-                    <h2>Links to online profiles</h2>
+                    <h2>Online Profiles</h2>
                     <ul>
-                        <li><a href="https://github.com/mikedigan8">Github</a><br></br></li>
-                        <li><a href="https://www.linkedin.com/in/mike-digan">Linkedin</a><br></br></li>
-                        <li><a href="https://coloradomesa.joinhandshake.com/users/8854211">Handshake</a></li>
+                        {data.map((name, index)=>{
+                            return <li><a href={name.url}>{name.title}</a><br /></li>
+                        })}
                     </ul>
                 </p>
 
                 <p class="employment">
                     <h1>
-                        My Employment History
+                        Employment History
             </h1>
                     <h3>
                         EUREKA! McConnell Science Museum
@@ -72,7 +73,54 @@ class Home extends React.Component {
                     </ul>
                 </p>
                 <hr></hr>
-
+                <p class="academics">
+                    <h1>Academic History and Relevant Courses</h1>
+                    <h3>Bachelor's in Science: General Accounting</h3>
+                    <h5>August 2013 - May 2018</h5>
+                    <ul>
+                        <li class="bulletItem">Intermediate Accounting I & II</li>
+                Development of a foundational understanding of Generally Accepted Accounting Principles and their application to external financial statements.
+                <br /><br /><li class="bulletItem">Ethics for Accounting Professionals</li>
+                The field of ethics as applied to the accounting and finance professions. Ethical standards of the profession, accounting and finance scandals in recent history, and methods to overcome ethical dilemmas encountered as professionals.
+                <br /><br /><li class="bulletItem">Accounting Information Systems</li>
+                A study of the concepts and design of the Accounting Information System with emphasis on the internal control structures, requirements, and professional standards.
+                <br /><br /><li class="bulletItem">Auditing I & II</li>
+                Scope and purposes of the attestation work of a certified public accountant focusing on generally accepted auditing standards (GAAS). Includes theory of auditing, professional ethics, legal liability of the auditor, and internal control.
+                <br /><br /><li class="bulletItem">Individual Income Tax</li>
+                Federal Income Tax Law in-depth as it relates to individual taxpayers. Introduction to various tax reference resources.
+                <br /><br /><li class="bulletItem">Advanced Tax and Tax Research</li>
+                Federal Income Tax Law for corporations, partnerships, estates, trusts, and gifts. In-depth experience with tax research resources, research methods and related projects. Required participation in the Tax Assistance Program to acquire practical experience in communication with taxpayers and preparation of tax returns.
+            </ul>
+                    <h3>Bachelor's in Seicnce: Computer Science</h3>
+                    <h5>January 2020 - May2021</h5>
+                    <ul>
+                        <li class="bulletItem">Programming Languages</li>
+                Principles and concepts which characterize various classes of high-level, computer programming languages are covered. Topics will include syntax and semantic issues, data types/classes, control structures, binding, and storage allocation.
+                <br /><br /><li class="bulletItem">User Interface Design</li>
+                Examination of user interface design (UID) principles. They include rules of perception, systems analysis, user analysis, good design principles, and testing and evaluation of designs. Using an appropriate Rapid Application Development tool, students will design a major project emphasizing UID concepts.
+                <br /><br /><li class="bulletItem">Computer Secutiry</li>
+                Networked-computer security, suitable for both CS and CIS majors. Topics include security framework, access control and site security, firewalls, attack methods, elements of cryptography and cryptographic systems, incidence response, security in e-commerce and e-mail, management and policy decisions for security.
+                <br /><br /><li class="bulletItem">Object Oriented Programming</li>
+                Advanced programming techniques using the object-oriented paradigm, with emphasis on abstractness of design, encapsulation, inheritance, and polymorphism. Additional topics include design tools and methodologies for determining classes, responsibilities, collaborations, and hierarchies.
+                <br /><br /><li class="bulletItem">Theory of Algorithms</li>
+                Techniques for analyzing time and space requirements of computer algorithms. Models are set up for analysis and techniques are applied to algorithms related to sorting and searching, pattern-matching, graph problems and other selected problems. The notion of NP-hard problems is introduced and related problems are discussed.
+                <br /><br /><li class="bulletItem">Software Engineering</li>
+                Exploration of the philosophy of software engineering. Software project planning, requirement analysis, software system design and strategies, software design tools, program and system testing, system maintenance, and economics are examined.
+            </ul>
+                    <h3>Extraneous Courses</h3>
+                    <ul>
+                        <li class="bulletItem">Calculus I</li>
+                An introduction to differentiation and integration of functions of a single variable. Topics include functions, limits, continuity, differentiation, related rates, min-max problems, graphing, integration and applications.
+                <br /><br /><li class="bulletItem">Calculus II</li>
+                A continuation of Calculus I. Topics include techniques of integration, trigonometric and hyperbolic functions, inverse, logarithmic and exponential functions, sequences, series, conic sections, polar coordinates and parametric equations.
+                <br /><br /><li class="bulletItem">Calculus III</li>
+                Vectors in three-dimensional space, vector functions, partial derivatives, directional derivative and multiple integrals.
+                <br /><br /><li class="bulletItem">Differential Equations</li>
+                Techniques of solving differential equations of order one, linear differential equations, linear equations with constant coefficients, non-homogeneous equations, variation of parameter techniques, and Laplace transform methods.
+                <br /><br /><li class="bulletItem">Discrete Structures I</li>
+                Elementary logic, induction, recursion, recurrence relations, sets, combinatorics, relations, functions, graphs, trees, and elementary abstract structures.
+            </ul>
+                </p>
             </div>
         );
     }
