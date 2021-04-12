@@ -1,4 +1,4 @@
-import reactDom from 'react-dom';
+/*import reactDom from 'react-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import meInCar from './Me_in_a_car.jpg';
@@ -202,3 +202,15 @@ function setHobbies() {
 reactDom.render(getTitle(), document.getElementById('appTitle'));
 reactDom.render(getBody(), document.getElementById('root'));
 ReactDOM.render(setNavBar(), document.getElementById('header'));
+*/
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

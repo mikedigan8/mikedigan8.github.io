@@ -1,4 +1,5 @@
 import React from "react";
+import meInCar from './Me_in_a_car.jpg';
 
 class Home extends React.Component {
     constructor(props) {

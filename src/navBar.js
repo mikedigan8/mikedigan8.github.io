@@ -9,12 +9,8 @@ import {
 } from "react-router-dom";
 
 import Home from './home';
-import Teaching from './teaching';
-import Research from './research';
-import Resources from './resources';
-import Contact from './contact';
-
-import PageNoteFound from './page-not-found';
+import Hobbies from './hobbies';
+import Projects from './projects';
 
 class Clickable extends React.Component {
     constructor(props) {
@@ -85,9 +81,6 @@ class Navbar extends React.Component {
               </Route>
               <Route exact path="/projects">
                 <Projects />
-              </Route>
-              <Route path="*">
-                <PageNoteFound />
               </Route>
             </Switch>
           </Router>

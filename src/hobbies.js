@@ -1,6 +1,8 @@
 import React from "react";
+import playingGuitar from './Playing_guitar.jpg'
+import minturnMile from './minturnMile.JPG';
 
-class Home extends React.Component {
+class Hobbies extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
