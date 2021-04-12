@@ -20,7 +20,7 @@ class Clickable extends React.Component {
     handleClick = () => this.props.onClick(this.props.index);
     render() {
       return (
-        <li className="nav-item">
+        <li className="liNavBar">
             <Link to={this.props.to} className={this.props.isActive ? "nav-link active":"nav-link"}
             onClick={ this.handleClick }> {this.props.name} </Link>
         </li>
@@ -49,12 +49,9 @@ class Navbar extends React.Component {
       const show = (this.state.menu) ? "show" : "";
         return (
           <Router>
-            <nav className="navbar sticky-top navbar-expand-sm bg-dark navbar-dark">
-                <button className="navbar-toggler" type="button" onClick={ this.toggleMenu }>
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+            <nav>
                 <div className={"collapse navbar-collapse "+show} id="collapsibleNavbar">
-                    <ul className="navbar-nav">
+                    <ul className="navBar">
                         {
                           this.state.nav_text.map( (value, i) =>
                           <Clickable name={value} to={value.toLocaleLowerCase()} index={i} 
